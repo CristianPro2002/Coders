@@ -1,0 +1,38 @@
+.products {
+  min-height: 100%;
+  padding: 40px 20px;
+  padding-bottom: 85px;
+}
+
+.products-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.products-data-title {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.products-subcategories {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: auto;
+  padding: 5px;
+}
+
+.products-subcategories::-webkit-scrollbar {
+  display: none;
+}
+
+.products-items {
+  width: 100%;
+  padding-top: 20px;
+}

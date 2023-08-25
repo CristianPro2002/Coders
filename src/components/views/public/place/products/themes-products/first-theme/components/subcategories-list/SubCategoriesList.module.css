@@ -1,0 +1,17 @@
+.products-description {
+  padding: 10px;
+  flex: 1 0 auto;
+  width: 120px;
+  margin: 0 10px;
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.special {
+  border-radius: 10px;
+  background: #ea6363;
+  font-weight: bold;
+  color: white;
+}

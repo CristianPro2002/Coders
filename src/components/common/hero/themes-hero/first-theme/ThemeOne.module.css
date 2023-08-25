@@ -1,0 +1,34 @@
+.hero a {
+  text-decoration: none;
+}
+
+.hero_title {
+  text-align: left;
+  color: brown;
+}
+
+.padding_center {
+  padding: 35px 0;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.hero_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.left {
+  justify-content: left;
+}
+
+.hero_logo_img {
+  max-width: 140px;
+  max-height: 75px;
+}
+
+.padding {
+  padding-top: 60px;
+}

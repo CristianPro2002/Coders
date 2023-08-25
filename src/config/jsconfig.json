@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "jsx": "react-jsx",
+        "module": "ES6",
+        "moduleResolution": "Node"
+    },
+    "exclude": ["node_modules", "dist", "**/node_modules/*"]
+}

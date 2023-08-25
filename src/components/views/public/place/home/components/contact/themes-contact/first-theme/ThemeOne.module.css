@@ -1,0 +1,72 @@
+.contact {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.contact-address-title {
+  padding-bottom: 15px;
+  padding-top: 40px;
+  font-weight: 900;
+}
+
+.contact-hours-title {
+  padding: 15px 0;
+  padding-top: 40px;
+  font-weight: 900;
+}
+
+.contact-hours-contentHours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-hours p {
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info-title {
+  padding: 15px 0;
+  padding-top: 40px;
+  font-weight: 900;
+}
+
+.contact-social {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  padding-top: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.contact-networks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+}
+
+.contact-networks img {
+  width: 55px;
+  height: auto;
+  cursor: pointer;
+}

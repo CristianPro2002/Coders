@@ -1,0 +1,12 @@
+:root {
+  /* Colors global */
+  /* dark, light, glass formal, informal */
+
+  /* Base */
+  --color-neutral: #000000;
+  --color-base: #f4f4f4;
+  --color-primary: #ffffff;
+  --color-secondary: #d9d9d9;
+  --font-family-base: Helvetica, sans-serif;
+  --font-size: 18px;
+}
