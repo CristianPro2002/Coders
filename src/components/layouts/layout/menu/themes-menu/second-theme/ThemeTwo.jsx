@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ThemeTwoCarIcon } from "../../../../../ui/icons/Icons";
-import styles from "./ThemeTwo.module.css";
+import styles from "@/styles/Theme/Second-theme/Menu/Menu.module.css";
 
 export default function ThemeTwo({ dataPlace, stateMenu, Link }) {
   const [activeMenu, setActiveMenu] = useState(1);

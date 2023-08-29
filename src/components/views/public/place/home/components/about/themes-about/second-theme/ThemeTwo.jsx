@@ -1,4 +1,4 @@
-import styles from "./ThemeTwo.module.css";
+import styles from "@/styles/Theme/Second-theme/Home/About.module.css";
 
 export default function ThemeTwo({ about, LANGUAGE }) {
   return (

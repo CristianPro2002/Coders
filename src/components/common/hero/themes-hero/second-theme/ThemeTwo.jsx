@@ -1,4 +1,4 @@
-import styles from "./ThemeTwo.module.css";
+import styles from "@/styles/Theme/Second-theme/Hero/Hero.module.css";
 
 export default function ThemeTwo({ dataPlace, Link, location }) {
   return (

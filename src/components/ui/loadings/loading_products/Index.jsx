@@ -1,9 +1,8 @@
 import { Skeleton, Space } from "antd";
-import { skeletonStyles } from "./skeleton_styles";
-import "./index.css";
+import { loadingProducts } from "@/styles/Components/Loadings/loadingProducts";
 
 export function Loading_Page_Products() {
-  const { styles } = skeletonStyles();
+  const { styles } = loadingProducts();
 
   return (
     <Space direction="vertical" style={styles.styleSpace}>
@@ -25,7 +24,7 @@ export function Loading_Page_Products() {
 
 export function Loading_Products() {
   
-  const { styles } = skeletonStyles();
+  const { styles } = loadingProducts();
 
   return (
     <Space direction="vertical">

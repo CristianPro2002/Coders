@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import styles from "./ThemeTwo.module.css";
+import styles from "@/styles/Theme/Second-theme/Categories/Categories.module.css";
 
 export default function ThemeTwo({
   dataCategory,

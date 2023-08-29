@@ -1,4 +1,4 @@
-import styles from "./ThemeTwo.module.css";
+import styles from "@/styles/Theme/Second-theme/Home/Custom.module.css";
 
 export default function ThemeTwo({
   custom,

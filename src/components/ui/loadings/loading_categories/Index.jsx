@@ -1,9 +1,8 @@
 import { Skeleton, Space } from "antd";
-import { skeletonStyles } from "./skeleton_styles";
-import "./index.css";
+import { loadingCategories } from "@/styles/Components/Loadings/loadingCategories";
 
 export default function Loading_Categories() {
-  const { styles } = skeletonStyles();
+  const { styles } = loadingCategories();
 
   return (
     <Space direction="vertical" style={styles.styleSpace}>
@@ -13,7 +12,7 @@ export default function Loading_Categories() {
       <Skeleton.Avatar
         active
         shape="square"
-        className="categoires-skeleton-avatar"
+        className="categories-skeleton-avatar"
         style={styles.styleCard}
       />
       <div style={{ paddingTop: "30px" }}>

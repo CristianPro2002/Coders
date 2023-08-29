@@ -1,0 +1,22 @@
+:root {
+  /* Colors global */
+
+  /* Base */
+  --color-neutral: #000000;
+  --color-base: #f4f4f4;
+  --color-primary: #ffffff;
+  --color-secondary: #d9d9d9;
+  --font-family-base: Helvetica, sans-serif;
+  --font-size: 16px;
+
+  /* Theme1 */ 
+    --color-theme1-primary: #FFF;
+    --color-theme1-secondary: #F7F8FB;
+    --color-theme1-tertiary: #000000;
+    --color-theme1-quaternary: #f4f4f4;
+    --font-family-theme1: Helvetica, sans-serif;
+    --font-size-theme1: 16px;
+
+    /* Theme2 */
+
+}

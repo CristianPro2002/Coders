@@ -1,4 +1,4 @@
-export const skeletonStyles = () => {
+export const loadingProducts = () => {
   const styles = {
     styleSpace: {
       width: "100%",
@@ -10,10 +10,14 @@ export const skeletonStyles = () => {
       height: "200px",
       width: "47vw",
     },
-    styleSlider: {
+    styleProduct: {
       borderRadius: "10px",
-      width: "92vw",
-      height: "200px",
+      width: "90vw",
+      height: "120px",
+      marginTop: "20px",
+    },
+    styleSubcategories: {
+      paddingTop: "20px",
     },
   };
 

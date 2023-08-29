@@ -1,4 +1,4 @@
-import styles from "./ThemeOne.module.css";
+import styles from "@/styles/Theme/First-theme/Layout/Layout.module.css";
 
 export default function ThemeOne({
   menuInteractive,

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import styles from "./ThemeOne.module.css";
+import styles from "@/styles/Theme/First-theme/Categories/Categories.module.css";
 
 export default function ThemeOne({
   dataCategory,

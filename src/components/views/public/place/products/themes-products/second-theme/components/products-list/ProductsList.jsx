@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowSimpleIcon } from "../../../../../../../../ui/icons/Icons";
-import styles from "./ProductsList.module.css";
+import styles from "@/styles/Theme/Second-theme/Products/ProductsList.module.css";
 
 export default function ProductsList({
   dataProducts,

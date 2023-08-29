@@ -1,4 +1,3 @@
-@import "./styles/Theme/themes.css";
 @import "./styles/Base/base.css";
 @import "./styles/State/state.css";
-@import "./styles/Layout/layout.css";
+@import "./styles/Theme/Theme.css";

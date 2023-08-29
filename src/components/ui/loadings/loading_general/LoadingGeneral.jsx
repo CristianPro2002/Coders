@@ -1,5 +1,5 @@
 import { Space, Spin } from "antd";
-import "./loadingGeneral.css"
+import "@/styles/Components/Loadings/loadingGeneral.css"
 
 export default function LoadingGeneral() {
   return (

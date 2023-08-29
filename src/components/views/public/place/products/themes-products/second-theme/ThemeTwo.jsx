@@ -5,7 +5,7 @@ import { convertMoney } from "../../../../../../../utils/functions/convert";
 import Hero from "../../../../../../common/hero/Hero";
 import SubCategoriesList from "./components/subcategories-list/SubCategoriesList";
 import ProductsList from "./components/products-list/ProductsList";
-import styles from "./ThemeTwo.module.css";
+import styles from "@/styles/Theme/Second-theme/Products/Products.module.css";
 
 export default function ThemeTwo({
   dataProducts,

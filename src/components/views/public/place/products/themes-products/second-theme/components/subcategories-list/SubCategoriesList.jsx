@@ -1,4 +1,4 @@
-import styles from "./SubCategoriesList.module.css";
+import styles from "@/styles/Theme/Second-theme/Products/SubCategoriesList.module.css";
 
 export default function SubCategoriesList({
   dataProducts,

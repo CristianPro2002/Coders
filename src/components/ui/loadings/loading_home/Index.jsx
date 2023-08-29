@@ -1,10 +1,9 @@
 import { Skeleton, Space } from "antd";
-import { skeletonStyles } from "./skeleton_styles"
-import "./index.css"
+import { loadingHome } from "@/styles/Components/Loadings/loadingHome";
 
 export default function Loading_Home() {
 
-  const { styles } = skeletonStyles();
+  const { styles } = loadingHome();
 
   return (
     <Space direction="vertical" style={styles.styleSpace}>

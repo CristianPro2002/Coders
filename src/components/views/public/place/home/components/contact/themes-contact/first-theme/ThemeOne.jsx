@@ -1,4 +1,4 @@
-import styles from "./ThemeOne.module.css";
+import styles from "@/styles/Theme/First-theme/Home/Contact.module.css";
 
 export default function ThemeOne({ contact, LANGUAGE, formatHours }) {
   return (

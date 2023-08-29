@@ -5,7 +5,6 @@ import { THEME_1, THEME_2 } from "../../../../../../../utils/constants/theme";
 import Slider from "../../../../../../common/slider/Slider";
 import ThemeOne from "./themes-custom/first-theme/ThemeOne";
 import ThemeTwo from "./themes-custom/second-theme/ThemeTwo";
-import "./custom.css";
 
 export default function Custom({ custom }) {
   const navigate = useNavigate();

@@ -3,7 +3,6 @@ import { THEME_1, THEME_2 } from "../../../../../../../utils/constants/theme";
 import { LANGUAGE } from "../../../../../../../utils/constants/language";
 import ThemeOne from "./themes-contact/first-theme/ThemeOne";
 import ThemeTwo from "./themes-contact/second-theme/ThemeTwo";
-import "./contact.css";
 
 export default function Contact({ contact }) {
   let { theme } = useSelector((state) => state.theme);

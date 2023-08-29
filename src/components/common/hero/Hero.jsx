@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { THEME_1, THEME_2 } from "../../../utils/constants/theme";
-import "./hero.css";
 import ThemeOne from "./themes-hero/first-theme/ThemeOne";
 import ThemeTwo from "./themes-hero/second-theme/ThemeTwo";
 

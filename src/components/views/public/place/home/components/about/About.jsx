@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import { THEME_1, THEME_2 } from "../../../../../../../utils/constants/theme";
 import { LANGUAGE } from "../../../../../../../utils/constants/language";
-import "./about.css";
 import ThemeOne from "./themes-about/first-theme/ThemeOne";
 import ThemeTwo from "./themes-about/second-theme/ThemeTwo";
 

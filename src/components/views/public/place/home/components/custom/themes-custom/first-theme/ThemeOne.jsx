@@ -1,4 +1,4 @@
-import styles from "./ThemeOne.module.css";
+import styles from "@/styles/Theme/First-theme/Home/Custom.module.css";
 
 export default function ThemeOne({
   custom,

@@ -1,5 +1,5 @@
 import { FacebookThemeTwoIcon, InstagramThemeTwoIcon, WebsiteThemeTwoIcon, WhatsappThemeTwoIcon } from "../../../../../../../../ui/icons/Icons";
-import styles from "./ThemeTwo.module.css";
+import styles from "@/styles/Theme/Second-theme/Home/Contact.module.css";
 
 export default function ThemeTwo({ contact, LANGUAGE, formatHours }) {
   return (
