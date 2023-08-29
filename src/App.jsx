@@ -17,6 +17,33 @@ export default function App() {
     "(max-width: 768px) and (min-width: 360px)"
   );
 
+  function enterFullscreen() {
+    const doc = window.document.documentElement;
+    
+    if (doc.requestFullscreen) {
+      doc.requestFullscreen();
+    } else if (doc.mozRequestFullScreen) { // Firefox
+      doc.mozRequestFullScreen();
+    } else if (doc.webkitRequestFullscreen) { // Chrome, Safari y Opera
+      doc.webkitRequestFullscreen();
+    } else if (doc.msRequestFullscreen) { // Internet Explorer
+      doc.msRequestFullscreen();
+    }
+  }
+  
+  // Salir del modo de pantalla completa
+  function exitFullscreen() {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    }
+  }
+
   mobileMediaQuery.addEventListener("change", (e) => {
     setDisplay(e.matches);
   });
@@ -44,6 +71,8 @@ export default function App() {
         localStorage.setItem("theme", res.data.theme);
       })
       .catch((err) => console.log(err));
+
+      enterFullscreen();
   }, []);
 
   return <>{display ? <Router /> : null}</>;
