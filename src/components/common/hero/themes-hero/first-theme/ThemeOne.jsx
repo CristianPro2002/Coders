@@ -1,14 +1,6 @@
-import screenfull from "screenfull";
 import styles from "@/styles/Theme/First-theme/Hero/Hero.module.css";
 
 export default function ThemeOne({ dataPlace, Link, location }) {
-
-  const handleScreen = () => {
-    if(screenfull.isEnabled){
-      screenfull.toggle();
-    }
-  };
-
   return (
     <section className={styles.hero}>
       {dataPlace.logo.length > 0 ? (
@@ -24,7 +16,6 @@ export default function ThemeOne({ dataPlace, Link, location }) {
               src={dataPlace.logo}
               alt="logo"
               className={styles.hero_logo_img}
-              onClick={handleScreen}
             />
           </div>
         </Link>

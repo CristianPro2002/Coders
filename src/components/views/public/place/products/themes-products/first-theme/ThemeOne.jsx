@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowIcon } from "../../../../../../ui/icons/Icons";
-import { Loading_Products } from "../../../../../../ui/loadings/loading_products";
+import { Loading_Products } from "../../../../../../ui/loadings/loading_products/Index";
 import { convertMoney } from "../../../../../../../utils/functions/convert";
 import Hero from "../../../../../../common/hero/Hero";
 import SubCategoriesList from "./components/subcategories-list/SubCategoriesList";
