@@ -8,6 +8,7 @@ export default function Hero() {
   const dataPlace = useSelector((state) => state.place);
   const { theme } = useSelector((state) => state.theme);
   const location = useLocation();
+  console.log(location.pathname)
   return (
     <>
       {theme === THEME_1 ? (
