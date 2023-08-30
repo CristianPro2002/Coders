@@ -17,7 +17,7 @@
   padding-top: 25px;
   padding-bottom: 15px;
   text-align: center;
-  color: white;
+  color: var(--white-color);
 }
 
 .products-subcategories {

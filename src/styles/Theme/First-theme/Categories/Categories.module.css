@@ -39,7 +39,7 @@
   position: relative;
   height: 190px;
   border-radius: 10px;
-  filter: drop-shadow(8px 8px 7px rgba(0, 0, 0, 0.5));
+  box-shadow: var(--shadow-theme1-primary);
 }
 
 .categories-itembackground::before {
@@ -68,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: var(--black-color);
 }
 
 .categories-items h2 {

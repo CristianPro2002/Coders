@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { addPlace } from "./config/redux/slices/slicePlace";
 import { getPlace } from "./utils/api/place";
 import { addTheme } from "./config/redux/slices/sliceTheme";
-import Router from "./config/routes/Index";
+import Router from "./config/routes";
 import "./index.css";
 
 const socket = io("http://localhost:4000");

@@ -3,14 +3,14 @@
   flex: 1 0 auto;
   width: 120px;
   margin: 0 10px;
-  box-shadow: 5px 5px 4px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: var(--shadow-theme2-secondary);
   border-radius: 10px;
-  background-color: #f4f4f4;
+  background-color: var(--color-theme2-quaternary);
   text-align: center;
 }
 
 .special {
   border-radius: 10px;
-  background: #ea6363;
+  background: var(--color-theme2-tertiary); 
   font-weight: bold;
 }

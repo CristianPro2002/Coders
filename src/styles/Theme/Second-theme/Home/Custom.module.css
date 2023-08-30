@@ -8,7 +8,7 @@
 }
 
 .custom_contentText {
-  background: rgba(216, 216, 216, 0.5);
+  background: var(--color-theme2-quinary);
   border-radius: 10px;
   padding: 25px;
   margin: 30px 0;
@@ -16,7 +16,7 @@
 
 .custom_text {
   font-size: 20px;
-  color: white;
+  color: var(--white-color);
 }
 
 .custom_carousel {
@@ -33,12 +33,12 @@
 
 .custom_btnscrl_link {
   border-radius: 5px;
-  background: #fcd383;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  background: var(--color-theme2-tertiary);
+  box-shadow: var(--shadow-theme2-primary);
   height: 45px;
   font-size: 20px;
   font-weight: 900;
-  color: black;
+  color: var(--color-theme2-primary) !important;
   text-transform: uppercase;
   border: none;
 }
@@ -49,18 +49,18 @@
 
 .custom_btnscrl_reserve {
   border-radius: 5px;
-  background: #f4f4f4;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  background: var(--color-theme2-quaternary);
+  box-shadow: var(--shadow-theme2-primary);
   font-size: 20px;
   height: 45px;
   font-weight: 900;
-  color: black;
+  color: var(--color-theme2-primary);
   text-transform: uppercase;
   border: none;
 }
 
 .custom_btnscrl_reserve:hover {
-  background: #f4f4f4;
-  color: #000 !important;
+  background: var(--shadow-theme2-quaternary);
+  color: var(--color-theme2-primary) !important;
   outline: none;
 }

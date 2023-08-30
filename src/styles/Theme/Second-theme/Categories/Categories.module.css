@@ -40,8 +40,7 @@
   position: relative;
   height: 190px;
   border-radius: 10px;
-  filter: drop-shadow(8px 8px 7px rgba(0, 0, 0, 0.5));
-  border: 1px solid white;
+  border: 2px solid var(--white-color);
 }
 
 .categories-itembackground::before {
@@ -70,7 +69,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: var(--color-theme2-primary);
 }
 
 .categories-items h2 {
@@ -86,7 +85,7 @@
 .categories-recommended h2 {
   padding: 2px;
   font-size: 1.3rem;
-  color: white;
+  color: var(--white-color);
 }
 
 .categories-carousel {

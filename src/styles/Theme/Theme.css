@@ -2,6 +2,8 @@
   /* Colors global */
 
   /* Base */
+  --black-color: #222;
+  --white-color: #fff;
   --color-neutral: #000000;
   --color-base: #f4f4f4;
   --color-primary: #ffffff;
@@ -12,11 +14,25 @@
   /* Theme1 */ 
     --color-theme1-primary: #FFF;
     --color-theme1-secondary: #F7F8FB;
-    --color-theme1-tertiary: #000000;
-    --color-theme1-quaternary: #f4f4f4;
+    --color-theme1-tertiary: #EA6363;
+    --color-theme1-quaternary: #F4F4F4;
+    --color-theme1-quinary: rgba(216, 216, 216, 0.50);    ;
+    --shadow-theme1-primary: 8px 8px 7px rgba(0, 0, 0, 0.50);
+    --shadow-theme1-secondary: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    --shadow-theme1-tertiary: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
     --font-family-theme1: Helvetica, sans-serif;
     --font-size-theme1: 16px;
 
     /* Theme2 */
+    --color-theme2-primary: #222;
+    --color-theme2-secondary: #D8D8D8;
+    --color-theme2-tertiary: #FCD383;
+    --color-theme2-quaternary: #FBFBFB;
+    --color-theme2-quinary: rgba(216, 216, 216, 0.5);    ;
+    --shadow-theme2-primary: 0px 2px 10px 0px rgba(0, 0, 0, 0.40);
+    --shadow-theme2-secondary: 5px 5px 4px 0px rgba(255, 255, 255, 0.25);
+    --shadow-theme2-tertiary: 0px 4px 20px 0px rgba(255, 255, 255, 0.20);
+    --font-family-theme2: Helvetica, sans-serif;
+    --font-size-theme2: 16px;
 
 }

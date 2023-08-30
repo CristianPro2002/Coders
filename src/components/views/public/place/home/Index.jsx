@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useCustomHome } from "../../../../../utils/hooks/useCustomHome";
-import Loading_Home from "../../../../ui/loadings/loading_home/Index";
+import Loading_Home from "../../../../ui/loadings/loading_home";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Custom from "./components/custom/Custom";

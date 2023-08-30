@@ -3,15 +3,15 @@
   flex: 1 0 auto;
   width: 120px;
   margin: 0 10px;
-  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--shadow-theme1-secondary);
   border-radius: 10px;
-  background-color: #f4f4f4;
+  background-color: var(--color-theme1-quaternary);
   text-align: center;
 }
 
 .special {
   border-radius: 10px;
-  background: #ea6363;
+  background: var(--color-theme1-tertiary);
   font-weight: bold;
-  color: white;
+  color:var(--color-theme1-primary);
 }
