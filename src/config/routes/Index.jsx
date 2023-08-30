@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Routes,
 } from "react-router-dom";
@@ -13,7 +13,7 @@ import ErrorPage from "../../components/common/error/ErrorPage";
 export default function Router() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
           <Route index element={<Index />} errorElement={<ErrorPage />} />
@@ -30,6 +30,6 @@ export default function Router() {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
