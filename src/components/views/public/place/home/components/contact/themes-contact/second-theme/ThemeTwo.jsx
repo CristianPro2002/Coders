@@ -1,33 +1,34 @@
-import { FacebookThemeTwoIcon, InstagramThemeTwoIcon, WebsiteThemeTwoIcon, WhatsappThemeTwoIcon } from "../../../../../../../../ui/icons/Icons";
+import {
+  FacebookThemeTwoIcon,
+  InstagramThemeTwoIcon,
+  WebsiteThemeTwoIcon,
+  WhatsappThemeTwoIcon,
+} from "../../../../../../../../ui/icons/Icons";
 import styles from "@/styles/Theme/Second-theme/Home/Contact.module.css";
 
 export default function ThemeTwo({ contact, LANGUAGE, formatHours }) {
   return (
     <div className={styles["contact"]}>
-      <div className={styles["contact-address"]}>
         {Object.entries(contact.address_title).length ? (
-          <section>
+          <section className={styles["contact-address"]}>
             <h2 className={styles["contact-address-title"]}>
               {contact.address_title[LANGUAGE]}
             </h2>
             <p>{contact.address}</p>
           </section>
         ) : null}
-      </div>
-      <div className={styles["contact-hours"]}>
-        {Object.entries(contact.open_hours_title).length ? (
-          <section>
-            <h2 className={styles["contact-hours-title"]}>
-              {contact.open_hours_title[LANGUAGE]}
-            </h2>
-            <article className={styles["contact-hours-contentHours"]}>
-              {formatHours(contact.open_hours[LANGUAGE]).map((item, index) => (
-                <p key={index}>{item}</p>
-              ))}
-            </article>
-          </section>
-        ) : null}
-      </div>
+      {Object.entries(contact.open_hours_title).length ? (
+        <section className={styles["contact-hours"]}>
+          <h2 className={styles["contact-hours-title"]}>
+            {contact.open_hours_title[LANGUAGE]}
+          </h2>
+          <article className={styles["contact-hours-contentHours"]}>
+            {formatHours(contact.open_hours[LANGUAGE]).map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
+          </article>
+        </section>
+      ) : null}
       <div className={styles["contact-info"]}>
         {contact.email.length ? (
           <section>
