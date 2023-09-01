@@ -29,9 +29,8 @@ export default function ThemeTwo({ contact, LANGUAGE, formatHours }) {
           </article>
         </section>
       ) : null}
-      <div className={styles["contact-info"]}>
         {contact.email.length ? (
-          <section>
+          <section className={styles["contact-info"]}>
             <h2 className={styles["contact-info-title"]}>
               {contact.title[LANGUAGE]}
             </h2>
@@ -63,7 +62,6 @@ export default function ThemeTwo({ contact, LANGUAGE, formatHours }) {
             </div>
           ) : null}
         </div>
-      </div>
     </div>
   );
 }
