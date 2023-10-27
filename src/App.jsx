@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { CLIENT_GOOGLE } from "./utils/constants/clientGoogle";
 import { getRefreshToken, getToken } from "./utils/functions/auth-helpers";
-import Router from "./config/routes";
+import Router from "./config/routes/Index";
 import "./index.css";
 
 const socket = io("http://localhost:4000");
