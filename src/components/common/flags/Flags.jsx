@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import { Select } from "antd";
 import { updateDefaultLang } from "../../../utils/api/place";
 import "./flags.css";
-import "../../ui/sprite-flags/freakflags.css";
 
 export default function Flags() {
   const language = localStorage.getItem("language");
@@ -25,7 +24,7 @@ export default function Flags() {
       updateDefaultLang(dataPlace._id, lang)
         .then((response) => {
           localStorage.setItem("language", response.data.dflt_lang);
-          window.location.reload();
+            window.location.reload();
         })
         .catch((error) => {
           console.log(error);
@@ -36,7 +35,7 @@ export default function Flags() {
   return (
     <Select
       defaultValue={language}
-      style={{ width: 70, textAlign: "center" }}
+      style={{ width: 60, textAlign: "center" }}
       placement="bottomRight"
       size="large"
       onChange={handleChange}
@@ -45,11 +44,21 @@ export default function Flags() {
       options={[
         {
           value: "en",
-          label: <div className="fflag fflag-US ff-round ff-xl"></div>,
+          label: (
+            <img
+              src="https://app-menu.s3.eu-north-1.amazonaws.com/226-united-states.svg"
+              width="30px"
+            />
+          ),
         }, //label de la bandera
         {
           value: "es",
-          label: <div className="fflag fflag-ES ff-round ff-xl"></div>,
+          label: (
+            <img
+              src="https://app-menu.s3.eu-north-1.amazonaws.com/128-spain.svg"
+              width="30px"
+            />
+          ),
         },
       ]}
     />

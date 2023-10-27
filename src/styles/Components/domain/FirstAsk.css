@@ -1,0 +1,43 @@
+.firstAsk-titleAsk {
+  text-align: center;
+}
+
+.firstAsk-buttonsFirstAsk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.firstAsk-buttonsFirstAsk button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 4, 0.2) 0px 1px 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.firstAsk-buttonConfirm {
+  background-color: #4caf50;
+  color: white;
+}
+
+.firstAsk-buttonConfirm:hover {
+  background-color: #58a15a;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.firstAsk-buttonCancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.firstAsk-buttonCancel:hover {
+  background-color: #ea6363;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,132 @@
+.homeScreen {
+  display: flex;
+  width: 100%;
+  padding: 40px 80px;
+  gap: 50px;
+}
+
+.homeScreen-mainHome {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeScreen-mainHome h2 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.homeScreen-editable {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.homeScreen-namePlace {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.homeScreen-mainHome label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-complementary);
+}
+
+.homeScreen-fileLogo {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+}
+
+.homeScreen-figureLogo {
+  position: relative;
+}
+
+.homeScreen-figureLogo button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.homeScreen-figureLogo img {
+  border-radius: 10px;
+}
+
+.homeScreen-devices {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.homeScreen-devices-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeScreen-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  gap: 30px;
+}
+
+.homeScreen-buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.homeScreen-buttons button img {
+  width: 45px;
+  height: 45px;
+}
+
+.homeScreen-icon {
+  font-size: 30px;
+}
+
+.homeScreen-visualizer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeScreen-visualizer h3 {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 24px;
+}
+
+.homeScreen-contentComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 850px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}

@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import placeReducer from "./slices/slicePlace";
-import themeReducer from "./slices/sliceTheme"
+import userReducer from "./slices/sliceUser";
+import placesReducer from "./slices/slicePlaces";
 
 export const store = configureStore({
     reducer: {
-        place: placeReducer,
-        theme: themeReducer
+        user: userReducer,
+        places: placesReducer,
     }
 });

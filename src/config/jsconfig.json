@@ -2,8 +2,12 @@
     "compilerOptions": {
         "checkJs": true,
         "jsx": "react-jsx",
-        "module": "ES6",
-        "moduleResolution": "Node"
+        "module": "commonjs",
+        "target": "ES6",
+        "lib": [
+            "ES6",
+            "DOM"
+        ]
     },
     "exclude": ["node_modules", "dist", "**/node_modules/*"]
 }

@@ -1,8 +1,14 @@
 import axios from "axios";
-import appMenu from "../../config/endpoints/client";
+import endPoints from "../../config/endpoints/client";
 
-const { baseSubCategories } = appMenu.subcategories;
+const { productsBySubCategory } = endPoints.subcategories;
 
-export const getProductsBySubCategory = id => {
-    return axios.get(`${baseSubCategories}products/${id}`)
+/**
+ * @description Esta función obtiene todos los productos por subcategoría.
+ * @param {String} id
+ * @returns {Promise<Object>}
+ */
+export const getProductsBySubCategory = (id) => {
+  if (!id) return console.log("Error: id is missing");
+  if (id) return axios.get(productsBySubCategory + id);
 };

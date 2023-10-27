@@ -1,0 +1,79 @@
+.requestEmail {
+  position: relative;
+  display: flex;
+  min-width: 500px;
+  flex-direction: column;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+.requestEmail-contentTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea6363;
+  height: 100px;
+  border-radius: 10px 10px 0 0;
+}
+
+.requestEmail-title {
+  text-align: center;
+  color: white;
+}
+
+.requestEmail-subtitle {
+  font-size: 15px;
+  color: white;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.requestEmail-linkLogin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 50%;
+  color: #ea6363;
+  text-decoration: none;
+}
+
+.requestEmail-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 50px;
+}
+
+.requestEmail-titleForm {
+  margin-bottom: 5px;
+  color: rgb(39, 214, 214);
+}
+
+.requestEmail input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.requestEmail button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ea6363;
+  color: var(--white-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}

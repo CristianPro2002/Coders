@@ -1,0 +1,77 @@
+.requestOtp {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 10px;
+  border: 5px solid white;
+}
+
+.requestOtp-title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ea6363;
+}
+
+.requestOtp-message {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ea6363;
+}
+
+.requestOtp-message span {
+  font-weight: bold;
+}
+
+.requestOtp-contentInputs {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.requestOtp-contentInputs input {
+  width: 50px;
+  height: 100px;
+  margin-bottom: 10px;
+  font-size: 50px;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 4px 0 rgba(221, 24, 24, 0.288);
+}
+
+.requestOtp-contentButton {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.requestOtp-send {
+  width: 60%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ea6363;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.requestOtp-send:hover {
+  background-color: #d94f4f;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.requestOtp-resend {
+  color: #ea6363;
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.disableResend {
+  color: gray;
+  cursor: none;
+  text-decoration-line: none;
+}

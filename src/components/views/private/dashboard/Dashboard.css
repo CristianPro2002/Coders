@@ -1,0 +1,248 @@
+.dashboard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+  padding: 50px 0;
+}
+
+.dashboard-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.dashboard-nameUser {
+  color: red;
+  text-transform: capitalize;
+}
+
+.dashboard-subtitlePlaces {
+  color: #ccc;
+}
+
+.dashboard-contentAddPlace {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.dashboard-buttonAddPlace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 100%;
+  padding: 15px;
+  margin-right: 5%;
+  border-radius: 5px;
+  background-color: #ea6363;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-buttonAddPlace:hover {
+  background-color: #d94f4f;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ---------------------- */
+
+.dashboard-restaurants {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-restaurant {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 3;
+}
+
+.dashboard-restaurant:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.23) 0px 2px 10px;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-restaurant h4 {
+  width: 100%;
+  text-align: left;
+  color: #ea6363;
+  z-index: 3;
+}
+
+.dashboard-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  z-index: 3;
+}
+
+.dashboard-contentDesing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.dashboard-contentDesing img {
+  width: 80px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.dashboard-contentData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  padding-left: 20px;
+}
+
+.dashboard-changeTheme {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.dashboard-changeTheme select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.dashboard-buttonsActions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dashboard-linkEdit {
+  text-decoration: none;
+  color: white;
+}
+
+.dashboard-buttonEdit {
+  width: 100%;
+  background-color: rgb(255, 188, 43);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-buttonEdit:hover {
+  background-color: rgb(255, 188, 43, 0.8);
+  transition: all 0.3s ease-in-out;
+
+  .dashboard-linkEdit {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.dashboard-buttonDelete {
+  width: 100%;
+  background-color: #ea6363;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-buttonDelete:hover {
+  background-color: rgb(255, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-buttonDomain {
+  width: 100%;
+  background-color: #17202a;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.dashboard-buttonDomain:hover {
+  background-color: rgb(23, 32, 42, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ---------------------- */
+
+.iframe {
+  transform: scale(0.5);
+}
+
+.dashboard-form {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dashboard-form h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dashboard-form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dashboard-form input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-form button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+}

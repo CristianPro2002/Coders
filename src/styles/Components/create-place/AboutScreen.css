@@ -1,0 +1,130 @@
+.aboutScreen {
+  display: flex;
+  width: 100%;
+  padding: 40px 80px;
+  gap: 50px;
+}
+
+.aboutScreen-mainAbout {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutScreen-mainAbout h2 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.aboutScreen-editable {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.aboutScreen-mainAbout label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--color-complementary);
+}
+
+.aboutScreen-contentForm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.aboutScreen-figureLogo {
+  position: relative;
+}
+
+.aboutScreen-figureLogo button {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.aboutScreen-figureLogo img {
+  border-radius: 10px;
+}
+
+.aboutScreen-devices {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+.aboutScreen-devices-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutScreen-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  gap: 30px;
+}
+
+.aboutScreen-buttons button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.aboutScreen-buttons button img {
+  width: 45px;
+  height: 45px;
+}
+
+.aboutScreen-icon {
+  font-size: 30px;
+}
+
+.aboutScreen-visualizer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutScreen-visualizer h3 {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 24px;
+}
+
+.aboutScreen-contentComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 440px;
+  height: 850px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.margin-bottomAbout {
+  margin-bottom: 30px;
+}

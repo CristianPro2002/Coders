@@ -1,31 +1,18 @@
-import { useState } from "react";
-import { Outlet } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { THEME_1, THEME_2 } from "../../../utils/constants/theme";
-import Menu from "./menu/Menu";
-import Header from "../../common/header/Header";
-import MenuInteractive from "./menu_interactive/MenuInteractive";
-import ThemeOne from "./themes-layout/first-theme/ThemeOne";
-import ThemeTwo from "./themes-layout/second-theme/ThemeTwo";
+import { NavLink, Outlet } from "react-router-dom";
+import Logo from "../../../assets/images/LogoMiGusto.png";
+import Alert from "../../common/alerts/Alert";
+import "@/styles/Layout/Layout.css";
 
 export default function Layout() {
-  const [menuInteractive, setMenuInteractive] = useState(false);
-  let { theme } = useSelector((state) => state.theme);
-
   return (
-    <>
-      {theme === THEME_1 ? (
-        <ThemeOne
-          menuInteractive={menuInteractive}
-          setMenuInteractive={setMenuInteractive}
-          MenuInteractive={MenuInteractive}
-          Header={Header}
-          Menu={Menu}
-          Outlet={Outlet}
-        />
-      ) : theme === THEME_2 ? (
-        <ThemeTwo Outlet={Outlet} Menu={Menu} />
-      ) : null}
-    </>
+    <div>
+      <Alert />
+      <nav className="layout-nav">
+        <NavLink to="/" className="layout-buttonLogo">
+          <img src={Logo} alt="logo" width={70} className="layout-logo" />
+        </NavLink>
+      </nav>
+      <Outlet />
+    </div>
   );
 }

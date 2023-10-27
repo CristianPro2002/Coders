@@ -1,68 +1,40 @@
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import { getProductByCategory } from "../api/category";
-import { getProductsBySubCategory } from "../api/subcategory";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { getProductsByAccount } from "../api/product";
+import { useAlert } from "./useAlert";
+import { validationError } from "../functions/validation-error";
 
 export const useGetProducts = () => {
-  const [dataProducts, setDataProducts] = useState([]);
-  const [dataSubCategory, setDataSubCategory] = useState([]);
-  const [loadingPage, setLoadingPage] = useState(true);
-  const [loadingProducts, setLoadingProducts] = useState(false);
-
-  const location = useLocation();
-  const idLocation = location.pathname.split("/")[2];
-
-  /**
-   * @description Esta funcion se encarga de obtener los productos de una subcategoria
-   * @param {String} id
-   * @returns {void}
-   */
-  const getProductsBySubcategory = (id) => {
-    setLoadingProducts(true);
-    getProductsBySubCategory(id)
-      .then((res) => {
-        setDataSubCategory(res.data.products);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => {
-        setLoadingProducts(false);
-      });
-  };
-
-  /**
-   * @description Esta funcion se encarga de resetear el estado de dataSubCategory
-   * @returns {void}
-   */
-  const resetDataSubCategory = () => {
-    setLoadingProducts(true);
-    setTimeout(() => {
-      setLoadingProducts(false);
-    }, 500);
-    setDataSubCategory([]);
-  };
-
+  const [products, setProducts] = useState([]);
+  const user = useSelector((state) => state.user);
+  const { openAlert } = useAlert();
   useEffect(() => {
-    const dataProducts = getProductByCategory(idLocation);
-    dataProducts
-      .then((values) => {
-        setDataProducts(values.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      })
-      .finally(() => {
-        setLoadingPage(false);
-      });
-  }, [idLocation]);
+    if (user.account_id) {
+      getProductsByAccount(user.account_id)
+        .then((res) => {
+          if (res.data.error === false && res.data.data) {
+            setProducts(res.data.data);
+          } else {
+            setProducts([]);
+            openAlert({
+              message: res.data.message,
+              type: "error",
+            });
+          }
+        })
+        .catch((err) => {
+          setProducts([]);
+          let { title, message, type } = validationError(err);
+          openAlert({
+            title,
+            message,
+            type,
+          });
+        });
+    }
+  }, [user.account_id]);
 
   return {
-    dataProducts,
-    dataSubCategory,
-    loadingPage,
-    loadingProducts,
-    getProductsBySubcategory,
-    resetDataSubCategory,
+    products,
   };
 };

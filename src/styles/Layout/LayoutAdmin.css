@@ -1,0 +1,263 @@
+:root {
+  --size-sidebar: 70px;
+  --size-sidebarActive: 250px;
+}
+
+.layoutAdmin {
+  width: 100vw;
+  height: 100vh;
+}
+
+.layoutAdmin-nav {
+  position: fixed;
+  top: 0;
+  left: var(--size-sidebar);
+  width: calc(100vw - var(--size-sidebar));
+  display: flex;
+  align-items: center;
+  height: 70px;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 99;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.activeSidebarNav {
+  left: var(--size-sidebarActive);
+  width: calc(100vw - var(--size-sidebarActive));
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-nav h3 {
+  padding: 0 30px;
+}
+
+.layoutAdmin-nav a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+.layoutAdmin-nav a:hover {
+  color: #858484;
+}
+
+.layoutAdmin-contentPerfil {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.layoutAdmin-menuNav {
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  transform: translateX(120%);
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 99;
+}
+
+.activeMenu {
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-menuNav span {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  padding: 0 20px;
+}
+
+.layoutAdmin-menuNav span:hover {
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease-in-out;
+}
+
+.specialButton {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.layoutAdmin-menuNav span button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #4a4a4a;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.userActive {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.layoutAdmin-buttonUser {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-buttonUser img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.activePerfil {
+  border: 1px solid red;
+}
+
+.layoutAdmin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--size-sidebar);
+  height: 100vh;
+  background-color: #17202a;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-sidebar.activeSidebar {
+  width: var(--size-sidebarActive);
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-sidebarOptions {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.layoutAdmin-sidebarLogo {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  width: 80px;
+  transform: translateX(-200%);
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-sidebarLogo.activeLogo {
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-buttonSidebar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.layoutAdmin-iconMenu {
+  color: white;
+}
+
+.layoutAdmin-contentOptionMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ea6363;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.layoutAdmin-contentOptionMenu:hover {
+  color: #d94f4f;
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-iconOptionMenu {
+  font-size: 20px;
+}
+
+.layoutAdmin-contentOptionMenu p {
+  margin-left: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.layoutAdmin-main {
+  position: fixed;
+  top: 70px;
+  left: var(--size-sidebar);
+  width: calc(100vw - var(--size-sidebar));
+  height: calc(100vh - 70px);
+  background-color: #fff;
+  overflow: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.layoutAdmin-main.activeSidebar {
+  left: var(--size-sidebarActive);
+  width: calc(100vw - var(--size-sidebarActive));
+  transition: all 0.3s ease-in-out;
+}
+
+/* Estilos de scroll para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.layoutAdmin-main::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.layoutAdmin-main::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.layoutAdmin-main::-webkit-scrollbar-button:increment,
+.layoutAdmin-main::-webkit-scrollbar-button {
+  display: none;
+}
+
+.layoutAdmin-main::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.layoutAdmin-main::-webkit-scrollbar-thumb {
+  background-color: #ea6363;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.layoutAdmin-main::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
