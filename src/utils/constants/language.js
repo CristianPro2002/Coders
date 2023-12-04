@@ -1,0 +1,1 @@
+export const LANGUAGE = typeof window !== "undefined" ? localStorage.getItem('language') : 'es';

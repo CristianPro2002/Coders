@@ -1,40 +1,69 @@
-import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { getProductsByAccount } from "../api/product";
-import { useAlert } from "./useAlert";
-import { validationError } from "../functions/validation-error";
+import { useState, useEffect } from "react";
+import { getProductByCategory } from "@/utils/api/category";
+import { getProductsBySubCategory } from "@/utils/api/subcategory";
+import { usePathname } from "next/navigation";
 
 export const useGetProducts = () => {
-  const [products, setProducts] = useState([]);
-  const user = useSelector((state) => state.user);
-  const { openAlert } = useAlert();
+  const [dataProducts, setDataProducts] = useState([]);
+  const [dataSubCategory, setDataSubCategory] = useState([]);
+  const [loadingPage, setLoadingPage] = useState(true);
+  const [loadingProducts, setLoadingProducts] = useState(false);
+
+  const locationId = usePathname().split("/")[2];
+
+  /**
+   * @description Esta funcion se encarga de obtener los productos de una subcategoria
+   * @param {String} id
+   * @returns {void}
+   */
+  const getProductsBySubcategory = (id) => {
+    setLoadingProducts(true);
+    getProductsBySubCategory(id)
+      .then((res) => {
+        setDataSubCategory(res.data.data.products);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setLoadingProducts(false);
+      });
+  };
+
+  /**
+   * @description Esta funcion se encarga de resetear el estado de dataSubCategory
+   * @returns {void}
+   */
+  const resetDataSubCategory = () => {
+    setLoadingProducts(true);
+    setTimeout(() => {
+      setLoadingProducts(false);
+    }, 500);
+    setDataSubCategory([]);
+  };
+
   useEffect(() => {
-    if (user.account_id) {
-      getProductsByAccount(user.account_id)
+    if (locationId) {
+      const dataProducts = getProductByCategory(locationId);
+      dataProducts
         .then((res) => {
-          if (res.data.error === false && res.data.data) {
-            setProducts(res.data.data);
-          } else {
-            setProducts([]);
-            openAlert({
-              message: res.data.message,
-              type: "error",
-            });
-          }
+          setDataProducts(res.data.data);
         })
         .catch((err) => {
-          setProducts([]);
-          let { title, message, type } = validationError(err);
-          openAlert({
-            title,
-            message,
-            type,
-          });
+          console.log(err);
+        })
+        .finally(() => {
+          setLoadingPage(false);
         });
     }
-  }, [user.account_id]);
+  }, [locationId]);
 
   return {
-    products,
+    dataProducts,
+    dataSubCategory,
+    loadingPage,
+    loadingProducts,
+    getProductsBySubcategory,
+    resetDataSubCategory,
   };
 };

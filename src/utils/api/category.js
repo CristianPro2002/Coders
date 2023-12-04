@@ -1,35 +1,16 @@
-import axios from "axios";
-import endPoints from "../../config/endpoints/client";
+import axios from 'axios'
+import appMenu from "../../config/endpoints/client";
 
-const { baseCategories, categoriesByMenu, productsByCategory } =
-  endPoints.categories;
+const { baseCategories } = appMenu.categories;
 
-/**
- * @description Esta función obtiene todas las categorías por menú.
- * @param {String} id
- * @returns {Promise<Object>}
- */
-export const getCategoriesByMenu = (id) => {
-  if (!id) return console.log("Error: id is missing");
-  if (id) return axios.get(categoriesByMenu + id);
-};
+export const getCategoriesByMenu = id => {
+    return axios.get(`${baseCategories}menu/${id}`)
+}
 
-/**
- * @description Esta función obtiene todos los productos por categoría.
- * @param {String} id
- * @returns {Promise<Object>}
- */
-export const getProductsByCategory = (id) => {
-  if (!id) return console.log("Error: id is missing");
-  if (id) return axios.get(productsByCategory + id);
-};
+export const getProductByCategory = id => {
+    return axios.get(`${baseCategories}products/${id}`)
+}
 
-/**
- * @description Esta función obtiene una categoría por id.
- * @param {String} id
- * @returns
- */
-export const getCategory = (id) => {
-  if (!id) return console.log("Error: id is missing");
-  if (id) return axios.get(baseCategories + id);
-};
+export const getCategory = id => {
+    return axios.get(`${baseCategories}${id}`)
+}; 

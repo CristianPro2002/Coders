@@ -1,4 +1,4 @@
-export const THEME = localStorage.getItem('theme') || 'theme';
+export const THEME = typeof window !== "undefined" ? localStorage.getItem('theme') : 'theme1';
 
 export const THEME_1 = "theme1";
 

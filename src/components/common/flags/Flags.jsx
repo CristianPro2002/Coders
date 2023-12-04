@@ -1,11 +1,14 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Select } from "antd";
-import { updateDefaultLang } from "../../../utils/api/place";
+import { updateDefaultLang } from "@/utils/api/place";
 import "./flags.css";
+import "@/components/ui/sprite-flags/freakflags.css";
 
 export default function Flags() {
-  const language = localStorage.getItem("language");
+  const language = typeof window !== "undefined" ? localStorage.getItem("language") : "es";
   const dataPlace = useSelector((state) => state.place);
   const [lang, setLang] = useState(language);
 
@@ -23,8 +26,8 @@ export default function Flags() {
     if (dataPlace.dflt_lang != lang) {
       updateDefaultLang(dataPlace._id, lang)
         .then((response) => {
-          localStorage.setItem("language", response.data.dflt_lang);
-            window.location.reload();
+          localStorage.setItem("language", response.data.data.dflt_lang);
+          window.location.reload();
         })
         .catch((error) => {
           console.log(error);
@@ -35,32 +38,22 @@ export default function Flags() {
   return (
     <Select
       defaultValue={language}
-      style={{ width: 60, textAlign: "center" }}
+      style={{ width: 70, textAlign: "center" }}
       placement="bottomRight"
       size="large"
       onChange={handleChange}
       bordered={false}
       showArrow={false}
-      options={[
-        {
-          value: "en",
-          label: (
-            <img
-              src="https://app-menu.s3.eu-north-1.amazonaws.com/226-united-states.svg"
-              width="30px"
-            />
-          ),
-        }, //label de la bandera
-        {
-          value: "es",
-          label: (
-            <img
-              src="https://app-menu.s3.eu-north-1.amazonaws.com/128-spain.svg"
-              width="30px"
-            />
-          ),
-        },
-      ]}
+      options={
+        dataPlace.langs
+          ? dataPlace.langs.map((item) => ({
+              value: item,
+              label: (
+                <div className={`fflag fflag-${item} ff-round ff-xl`}></div>
+              ),
+            }))
+          : []
+      }
     />
   );
 }

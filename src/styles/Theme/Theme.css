@@ -4,34 +4,35 @@
   /* Base */
   --black-color: #222;
   --white-color: #fff;
-  --color-primary: #FF1200;
-  --color-secondary: #000000;
-  --color-complementary: #F74141;
-  --color-complementary2: #F2F2F2;
-  --font-family-base: "Poppins", sans-serif;
+  --color-neutral: #000000;
+  --color-base: #f4f4f4;
+  --color-primary: #ffffff;
+  --color-secondary: #d9d9d9;
+  --font-family-base: Helvetica, sans-serif;
   --font-size: 16px;
 
-  /* Theme1 */
-  --color-theme1-primary: #fff;
-  --color-theme1-secondary: #f7f8fb;
-  --color-theme1-tertiary: #ea6363;
-  --color-theme1-quaternary: #f4f4f4;
-  --color-theme1-quinary: rgba(216, 216, 216, 0.5);
-  --shadow-theme1-primary: 8px 8px 7px rgba(0, 0, 0, 0.5);
-  --shadow-theme1-secondary: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
-  --shadow-theme1-tertiary: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
-  --font-family-theme1: "Poppins", sans-serif;
-  --font-size-theme1: 16px;
+  /* Theme1 */ 
+    --color-theme1-primary: #FFF;
+    --color-theme1-secondary: #F7F8FB;
+    --color-theme1-tertiary: #EA6363;
+    --color-theme1-quaternary: #F4F4F4;
+    --color-theme1-quinary: rgba(216, 216, 216, 0.50);    ;
+    --shadow-theme1-primary: 8px 8px 7px rgba(0, 0, 0, 0.50);
+    --shadow-theme1-secondary: 5px 5px 4px 0px rgba(0, 0, 0, 0.25);
+    --shadow-theme1-tertiary: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
+    --font-family-theme1: Helvetica, sans-serif;
+    --font-size-theme1: 16px;
 
-  /* Theme2 */
-  --color-theme2-primary: #222;
-  --color-theme2-secondary: #d8d8d8;
-  --color-theme2-tertiary: #fcd383;
-  --color-theme2-quaternary: #fbfbfb;
-  --color-theme2-quinary: rgba(216, 216, 216, 0.5);
-  --shadow-theme2-primary: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
-  --shadow-theme2-secondary: 5px 5px 4px 0px rgba(255, 255, 255, 0.25);
-  --shadow-theme2-tertiary: 0px 4px 20px 0px rgba(255, 255, 255, 0.2);
-  --font-family-theme2: "Poppins", sans-serif;
-  --font-size-theme2: 16px;
+    /* Theme2 */
+    --color-theme2-primary: #222;
+    --color-theme2-secondary: #D8D8D8;
+    --color-theme2-tertiary: #FCD383;
+    --color-theme2-quaternary: #FBFBFB;
+    --color-theme2-quinary: rgba(216, 216, 216, 0.5);    ;
+    --shadow-theme2-primary: 0px 2px 10px 0px rgba(0, 0, 0, 0.40);
+    --shadow-theme2-secondary: 5px 5px 4px 0px rgba(255, 255, 255, 0.25);
+    --shadow-theme2-tertiary: 0px 4px 20px 0px rgba(255, 255, 255, 0.20);
+    --font-family-theme2: Helvetica, sans-serif;
+    --font-size-theme2: 16px;
+
 }
