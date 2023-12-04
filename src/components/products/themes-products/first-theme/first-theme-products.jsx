@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowIcon } from "@/components/ui/icons/Icons";
-import { Loading_Products } from "@/components/ui/loadings/loading_products";
+import { Loading_Products } from "@/components/ui/loadings/loading_products/Index";
 import { validationLang } from "@/utils/functions/validation-lang";
 import { convertMoney } from "@/utils/functions/convert";
 import Hero from "@/components/common/hero/Hero";

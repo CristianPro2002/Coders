@@ -2,7 +2,7 @@
 
 import { useSelector } from "react-redux";
 import { THEME_1, THEME_2 } from "@/utils/constants/theme";
-import { Loading_Page_Products } from "@/components/ui/loadings/loading_products";
+import { Loading_Page_Products } from "@/components/ui/loadings/loading_products/Index";
 import { LANGUAGE } from "@/utils/constants/language";
 import { useGetProducts } from "@/utils/hooks/useGetProducts";
 import FirstThemeProducts from "./themes-products/first-theme/first-theme-products";

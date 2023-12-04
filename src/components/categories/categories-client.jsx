@@ -6,7 +6,7 @@ import { ArrowIcon } from "@/components/ui/icons/Icons";
 import { LANGUAGE } from "@/utils/constants/language";
 import { THEME_1, THEME_2 } from "@/utils/constants/theme";
 import { useGetDataMenu } from "@/utils/hooks/useGetDataMenu";
-import Loading_Categories from "@/components/ui/loadings/loading_categories";
+import Loading_Categories from "@/components/ui/loadings/loading_categories/Index";
 import Slider from "@/components/common/slider/slider";
 import Hero from "@/components/common/hero/Hero";
 import FirstThemeCategories from "./themes-categories/first-theme/first-theme-categories";
